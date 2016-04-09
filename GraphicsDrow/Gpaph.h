@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Gpaph.h
 //  GraphicsDrow
 //
 //  Created by Denis Andreev on 09.04.16.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface Gpaph : UIView
 
+
+-(void)addData:(NSArray*)dataArray;
 
 @end
-

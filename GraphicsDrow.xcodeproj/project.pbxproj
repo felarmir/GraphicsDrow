@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		C3C0936E1CB90DB6000875DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C0936D1CB90DB6000875DE /* main.m */; };
 		C3C093711CB90DB6000875DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C093701CB90DB6000875DE /* AppDelegate.m */; };
-		C3C093741CB90DB6000875DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C093731CB90DB6000875DE /* ViewController.m */; };
 		C3C093771CB90DB6000875DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C093751CB90DB6000875DE /* Main.storyboard */; };
 		C3C0937A1CB90DB6000875DE /* GraphicsDrow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3C093781CB90DB6000875DE /* GraphicsDrow.xcdatamodeld */; };
 		C3C0937C1CB90DB6000875DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C0937B1CB90DB6000875DE /* Assets.xcassets */; };
 		C3C0937F1CB90DB6000875DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C0937D1CB90DB6000875DE /* LaunchScreen.storyboard */; };
+		C3C093881CB90DFD000875DE /* GraphicView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C093871CB90DFD000875DE /* GraphicView.m */; };
+		C3C0938B1CB91050000875DE /* Gpaph.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C0938A1CB91050000875DE /* Gpaph.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +22,15 @@
 		C3C0936D1CB90DB6000875DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3C0936F1CB90DB6000875DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3C093701CB90DB6000875DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C3C093721CB90DB6000875DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C3C093731CB90DB6000875DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C3C093761CB90DB6000875DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3C093791CB90DB6000875DE /* GraphicsDrow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GraphicsDrow.xcdatamodel; sourceTree = "<group>"; };
 		C3C0937B1CB90DB6000875DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3C0937E1CB90DB6000875DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3C093801CB90DB6000875DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3C093861CB90DFD000875DE /* GraphicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicView.h; sourceTree = "<group>"; };
+		C3C093871CB90DFD000875DE /* GraphicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicView.m; sourceTree = "<group>"; };
+		C3C093891CB91050000875DE /* Gpaph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gpaph.h; sourceTree = "<group>"; };
+		C3C0938A1CB91050000875DE /* Gpaph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gpaph.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +65,16 @@
 			children = (
 				C3C0936F1CB90DB6000875DE /* AppDelegate.h */,
 				C3C093701CB90DB6000875DE /* AppDelegate.m */,
-				C3C093721CB90DB6000875DE /* ViewController.h */,
-				C3C093731CB90DB6000875DE /* ViewController.m */,
 				C3C093751CB90DB6000875DE /* Main.storyboard */,
 				C3C0937B1CB90DB6000875DE /* Assets.xcassets */,
 				C3C0937D1CB90DB6000875DE /* LaunchScreen.storyboard */,
 				C3C093801CB90DB6000875DE /* Info.plist */,
 				C3C093781CB90DB6000875DE /* GraphicsDrow.xcdatamodeld */,
 				C3C0936C1CB90DB6000875DE /* Supporting Files */,
+				C3C093861CB90DFD000875DE /* GraphicView.h */,
+				C3C093871CB90DFD000875DE /* GraphicView.m */,
+				C3C093891CB91050000875DE /* Gpaph.h */,
+				C3C0938A1CB91050000875DE /* Gpaph.m */,
 			);
 			path = GraphicsDrow;
 			sourceTree = "<group>";
@@ -153,8 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3C093741CB90DB6000875DE /* ViewController.m in Sources */,
 				C3C093711CB90DB6000875DE /* AppDelegate.m in Sources */,
+				C3C093881CB90DFD000875DE /* GraphicView.m in Sources */,
+				C3C0938B1CB91050000875DE /* Gpaph.m in Sources */,
 				C3C0937A1CB90DB6000875DE /* GraphicsDrow.xcdatamodeld in Sources */,
 				C3C0936E1CB90DB6000875DE /* main.m in Sources */,
 			);

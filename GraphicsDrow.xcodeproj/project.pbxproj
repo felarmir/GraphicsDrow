@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3C0936E1CB90DB6000875DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C0936D1CB90DB6000875DE /* main.m */; };
+		C3C093711CB90DB6000875DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C093701CB90DB6000875DE /* AppDelegate.m */; };
+		C3C093741CB90DB6000875DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C093731CB90DB6000875DE /* ViewController.m */; };
+		C3C093771CB90DB6000875DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C093751CB90DB6000875DE /* Main.storyboard */; };
+		C3C0937A1CB90DB6000875DE /* GraphicsDrow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3C093781CB90DB6000875DE /* GraphicsDrow.xcdatamodeld */; };
+		C3C0937C1CB90DB6000875DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C0937B1CB90DB6000875DE /* Assets.xcassets */; };
+		C3C0937F1CB90DB6000875DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C0937D1CB90DB6000875DE /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C3C093691CB90DB5000875DE /* GraphicsDrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphicsDrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C0936D1CB90DB6000875DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3C0936F1CB90DB6000875DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3C093701CB90DB6000875DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3C093721CB90DB6000875DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C3C093731CB90DB6000875DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C3C093761CB90DB6000875DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3C093791CB90DB6000875DE /* GraphicsDrow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GraphicsDrow.xcdatamodel; sourceTree = "<group>"; };
+		C3C0937B1CB90DB6000875DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3C0937E1CB90DB6000875DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3C093801CB90DB6000875DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3C093661CB90DB5000875DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3C093601CB90DB5000875DE = {
+			isa = PBXGroup;
+			children = (
+				C3C0936B1CB90DB6000875DE /* GraphicsDrow */,
+				C3C0936A1CB90DB5000875DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3C0936A1CB90DB5000875DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3C093691CB90DB5000875DE /* GraphicsDrow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3C0936B1CB90DB6000875DE /* GraphicsDrow */ = {
+			isa = PBXGroup;
+			children = (
+				C3C0936F1CB90DB6000875DE /* AppDelegate.h */,
+				C3C093701CB90DB6000875DE /* AppDelegate.m */,
+				C3C093721CB90DB6000875DE /* ViewController.h */,
+				C3C093731CB90DB6000875DE /* ViewController.m */,
+				C3C093751CB90DB6000875DE /* Main.storyboard */,
+				C3C0937B1CB90DB6000875DE /* Assets.xcassets */,
+				C3C0937D1CB90DB6000875DE /* LaunchScreen.storyboard */,
+				C3C093801CB90DB6000875DE /* Info.plist */,
+				C3C093781CB90DB6000875DE /* GraphicsDrow.xcdatamodeld */,
+				C3C0936C1CB90DB6000875DE /* Supporting Files */,
+			);
+			path = GraphicsDrow;
+			sourceTree = "<group>";
+		};
+		C3C0936C1CB90DB6000875DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3C0936D1CB90DB6000875DE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3C093681CB90DB5000875DE /* GraphicsDrow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3C093831CB90DB6000875DE /* Build configuration list for PBXNativeTarget "GraphicsDrow" */;
+			buildPhases = (
+				C3C093651CB90DB5000875DE /* Sources */,
+				C3C093661CB90DB5000875DE /* Frameworks */,
+				C3C093671CB90DB5000875DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraphicsDrow;
+			productName = GraphicsDrow;
+			productReference = C3C093691CB90DB5000875DE /* GraphicsDrow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3C093611CB90DB5000875DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Denis Andreev";
+				TargetAttributes = {
+					C3C093681CB90DB5000875DE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = PP7FFEG287;
+					};
+				};
+			};
+			buildConfigurationList = C3C093641CB90DB5000875DE /* Build configuration list for PBXProject "GraphicsDrow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3C093601CB90DB5000875DE;
+			productRefGroup = C3C0936A1CB90DB5000875DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3C093681CB90DB5000875DE /* GraphicsDrow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3C093671CB90DB5000875DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C0937F1CB90DB6000875DE /* LaunchScreen.storyboard in Resources */,
+				C3C0937C1CB90DB6000875DE /* Assets.xcassets in Resources */,
+				C3C093771CB90DB6000875DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3C093651CB90DB5000875DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C093741CB90DB6000875DE /* ViewController.m in Sources */,
+				C3C093711CB90DB6000875DE /* AppDelegate.m in Sources */,
+				C3C0937A1CB90DB6000875DE /* GraphicsDrow.xcdatamodeld in Sources */,
+				C3C0936E1CB90DB6000875DE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C3C093751CB90DB6000875DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3C093761CB90DB6000875DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3C0937D1CB90DB6000875DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3C0937E1CB90DB6000875DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3C093811CB90DB6000875DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C3C093821CB90DB6000875DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3C093841CB90DB6000875DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GraphicsDrow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wiirlock.GraphicsDrow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C3C093851CB90DB6000875DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GraphicsDrow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wiirlock.GraphicsDrow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3C093641CB90DB5000875DE /* Build configuration list for PBXProject "GraphicsDrow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C093811CB90DB6000875DE /* Debug */,
+				C3C093821CB90DB6000875DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3C093831CB90DB6000875DE /* Build configuration list for PBXNativeTarget "GraphicsDrow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C093841CB90DB6000875DE /* Debug */,
+				C3C093851CB90DB6000875DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C3C093781CB90DB6000875DE /* GraphicsDrow.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3C093791CB90DB6000875DE /* GraphicsDrow.xcdatamodel */,
+			);
+			currentVersion = C3C093791CB90DB6000875DE /* GraphicsDrow.xcdatamodel */;
+			path = GraphicsDrow.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C3C093611CB90DB5000875DE /* Project object */;
+}

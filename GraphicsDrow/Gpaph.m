@@ -7,6 +7,7 @@
 //
 
 #import "Gpaph.h"
+#import "ViewBGStyles.h"
 
 @implementation Gpaph
 {
@@ -24,6 +25,7 @@
     NSArray *data;
 }
 
+
 - (void)addData:(NSArray*)dataArray{
     data = dataArray;
     rect = self.layer.bounds;
@@ -36,10 +38,6 @@
 }
 
 -(void)drawGraphic{
-    if (!context) {
-        context = UIGraphicsGetCurrentContext();
-    }
-    
     CGFloat x = 0;
     [[UIColor greenColor] set];
     CGContextSetLineWidth(context, 2.0f);
@@ -85,16 +83,36 @@
     return min;
 }
 - (void)drawRect:(CGRect)rect {
+    if (!context) {
+        context = UIGraphicsGetCurrentContext();
+    }
+    [ViewBGStyles setGradienWhiteOrangeDarkOrange:context];
     [self drawGrid];
     [self drawGraphic];
 }
 
+-(void)setStyle{
+
+    UIColor *lightGradientColor = [UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:1.0];
+    UIColor *darkGradientColor = [UIColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:1.0];
+    
+    CGFloat locations[2] = {0.0, 1.0};
+    CFArrayRef colors = (__bridge CFArrayRef) [NSArray arrayWithObjects:(id)lightGradientColor.CGColor,
+                                      (id)darkGradientColor.CGColor,
+                                      nil];
+    
+    CGColorSpaceRef colorSpc = CGColorSpaceCreateDeviceRGB();
+    CGGradientRef gradient = CGGradientCreateWithColors(colorSpc, colors, locations);
+    
+    CGContextDrawLinearGradient(context, gradient, CGPointMake(0.5, 0.0), CGPointMake(0.5, 100.0), kCGGradientDrawsAfterEndLocation);
+    
+    CGColorSpaceRelease(colorSpc);
+    CGGradientRelease(gradient);
+}
 
 
 - (void)drawGrid{
-    if (!context) {
-        context = UIGraphicsGetCurrentContext();
-    }
+
     CGContextSetLineWidth(context, 0.1f);
     [[UIColor blueColor] set];
     

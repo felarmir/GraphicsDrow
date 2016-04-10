@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C32316801CBA82A8002BB9A9 /* ViewBGStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = C323167F1CBA82A8002BB9A9 /* ViewBGStyles.m */; };
 		C3C0936E1CB90DB6000875DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C0936D1CB90DB6000875DE /* main.m */; };
 		C3C093711CB90DB6000875DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C093701CB90DB6000875DE /* AppDelegate.m */; };
 		C3C093771CB90DB6000875DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C093751CB90DB6000875DE /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C323167E1CBA82A8002BB9A9 /* ViewBGStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewBGStyles.h; sourceTree = "<group>"; };
+		C323167F1CBA82A8002BB9A9 /* ViewBGStyles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewBGStyles.m; sourceTree = "<group>"; };
 		C3C093691CB90DB5000875DE /* GraphicsDrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphicsDrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C0936D1CB90DB6000875DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3C0936F1CB90DB6000875DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +78,8 @@
 				C3C093871CB90DFD000875DE /* GraphicView.m */,
 				C3C093891CB91050000875DE /* Gpaph.h */,
 				C3C0938A1CB91050000875DE /* Gpaph.m */,
+				C323167E1CBA82A8002BB9A9 /* ViewBGStyles.h */,
+				C323167F1CBA82A8002BB9A9 /* ViewBGStyles.m */,
 			);
 			path = GraphicsDrow;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3C093711CB90DB6000875DE /* AppDelegate.m in Sources */,
+				C32316801CBA82A8002BB9A9 /* ViewBGStyles.m in Sources */,
 				C3C093881CB90DFD000875DE /* GraphicView.m in Sources */,
 				C3C0938B1CB91050000875DE /* Gpaph.m in Sources */,
 				C3C0937A1CB90DB6000875DE /* GraphicsDrow.xcdatamodeld in Sources */,
@@ -311,6 +317,7 @@
 				C3C093851CB90DB6000875DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

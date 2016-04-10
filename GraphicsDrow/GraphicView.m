@@ -31,7 +31,7 @@
                       [NSNumber numberWithFloat:38.7], nil];
     
     [_graph addData:fData];
-    
+
 }
 
 - (void)didReceiveMemoryWarning {

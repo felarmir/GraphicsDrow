@@ -23,29 +23,34 @@
     
     CGContextRef context;
     NSArray *data;
+    
+    NSInteger days;
 }
 
 
 - (void)addData:(NSArray*)dataArray{
     data = dataArray;
-    rect = self.layer.bounds;
+    days = [data count];
     
-    stepX = (float)rect.size.width/(float)[data count];
+    stepX = (self.layer.bounds.size.width/(float)[data count])/1.6;
     minV = [self getMinValue:data];
     maxV = [self getMaxValue:data];
     valueSize = maxV - minV;
-    stepY = (float)rect.size.height/valueSize;
+    
 }
 
 -(void)drawGraphic{
     CGFloat x = 0;
     [[UIColor greenColor] set];
     CGContextSetLineWidth(context, 2.0f);
-    
-    CGContextMoveToPoint(context, 0,rect.size.height-(([data[0] floatValue]-minV)*stepY));
-    
+    CGContextSetLineJoin(context, kCGLineJoinRound);
+    stepY = (self.bounds.size.height/valueSize);
+    NSLog(@"Step:%f Height:%f", stepY, self.bounds.size.height);
+    CGContextMoveToPoint(context, 0,self.bounds.size.height-(([[data[0] objectForKey:@"temp"] floatValue]-minV)*stepY));
     for (int i = 1; i < [data count]; i++) {
-        CGContextAddLineToPoint(context, x+=stepX, rect.size.height-(([data[i] floatValue]-minV)*stepY));
+        CGFloat value = self.bounds.size.height-(([[data[i] objectForKey:@"temp"] floatValue]-minV)*stepY);
+        CGContextAddLineToPoint(context, x+=stepX, value);
+        NSLog(@"Height:%f Val:%f", self.bounds.size.height, (([[data[i] objectForKey:@"temp"] floatValue]-minV)));
     }
     
     CGContextStrokePath(context);
@@ -54,35 +59,38 @@
 -(CGFloat)getMinValue:(NSArray*)array{
     CGFloat min = 0;
     BOOL isFirst = YES;
-    for (NSNumber* n in array) {
-            if (isFirst) {
-                min = [n floatValue];
-                isFirst = NO;
-            } else {
-                if (min > [n floatValue]) {
-                    min = [n floatValue];
-                }
+    for (NSDictionary* d in array) {
+        float tmp = [[d objectForKey:@"temp"] floatValue];
+        if (isFirst) {
+            min = tmp;
+            isFirst = NO;
+        } else {
+            if (min > tmp) {
+                min = tmp;
             }
+        }
     }
     return min;
 }
 
 -(CGFloat)getMaxValue:(NSArray*)array{
-    CGFloat min = 0;
+    CGFloat max = 0;
     BOOL isFirst = YES;
-    for (NSNumber* n in array) {
-            if (isFirst) {
-                min = [n floatValue];
-                isFirst = NO;
-            } else {
-                if (min < [n floatValue]) {
-                    min = [n floatValue];
-                }
+    for (NSDictionary* d in array) {
+        float tmp = [[d objectForKey:@"temp"] floatValue];
+        if (isFirst) {
+            max = tmp;
+            isFirst = NO;
+        } else {
+            if (max < tmp) {
+                max = tmp;
             }
+        }
     }
-    return min;
+    return max;
 }
 - (void)drawRect:(CGRect)rect {
+    self.layer.cornerRadius = 10.0f;
     if (!context) {
         context = UIGraphicsGetCurrentContext();
     }
@@ -113,19 +121,19 @@
 
 - (void)drawGrid{
 
-    CGContextSetLineWidth(context, 0.1f);
-    [[UIColor blueColor] set];
+    CGContextSetLineWidth(context, 0.7f);
+    [[UIColor grayColor] set];
     
-    CGFloat stepGrindX = rect.size.width/10;
-    CGFloat stepGrindY = rect.size.height/10;
+    CGFloat stepGrindX = self.layer.bounds.size.width/days;
+    CGFloat stepGrindY = self.layer.bounds.size.height/10;
     
-    for (int i = 0; i < rect.size.width; i+=stepGrindX) {
+    for (int i = 0; i < self.layer.bounds.size.width; i+=stepGrindX) {
         CGContextMoveToPoint(context, i, 0);
-        CGContextAddLineToPoint(context, i, rect.size.height);
+        CGContextAddLineToPoint(context, i, self.layer.bounds.size.height);
     }
-    for (int i = 0; i < rect.size.height; i+=stepGrindY) {
+    for (int i = 0; i < self.layer.bounds.size.height; i+=stepGrindY) {
         CGContextMoveToPoint(context, 0, i);
-        CGContextAddLineToPoint(context, rect.size.width, i);
+        CGContextAddLineToPoint(context, self.layer.bounds.size.width, i);
     }
     CGContextStrokePath(context);
 }

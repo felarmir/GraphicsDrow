@@ -16,21 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSArray *fData = [NSArray arrayWithObjects:[NSNumber numberWithFloat:39.13],
-                      [NSNumber numberWithFloat:39.16],
-                      [NSNumber numberWithFloat:39.28],
-                      [NSNumber numberWithFloat:39.35],
-                      [NSNumber numberWithFloat:39.05],
-                      [NSNumber numberWithFloat:39.12],
-                      [NSNumber numberWithFloat:39.30],
-                      [NSNumber numberWithFloat:38.74],
-                      [NSNumber numberWithFloat:38.5],
-                      [NSNumber numberWithFloat:38.25],
-                      [NSNumber numberWithFloat:38.52],
-                      [NSNumber numberWithFloat:38.83],
-                      [NSNumber numberWithFloat:38.7], nil];
+    NSArray *dicDataArray = @[
+                    [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:5], @"temp", @"01.04",@"date", nil],
+                    [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:2], @"temp", @"02.04",@"date", nil],
+                    [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:4], @"temp", @"03.04",@"date", nil],
+                    [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:1], @"temp", @"04.04",@"date", nil],
+                    [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:8], @"temp", @"05.04",@"date", nil],
+                    [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:3], @"temp", @"06.04",@"date", nil],
+                    [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:9], @"temp", @"07.04",@"date", nil],
+                    [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:2], @"temp", @"08.04",@"date", nil],
+                    [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:15], @"temp", @"09.04",@"date", nil],
+                    [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:8], @"temp", @"10.04",@"date", nil],
+                    [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:8], @"temp", @"10.04",@"date", nil]];
     
-    [_graph addData:fData];
+    [_graph addData:dicDataArray];
 
 }
 
